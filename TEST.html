@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>第一个H5-添加新元素</title>
+</head>
+<script>
+	document.createElement("my");
+</script>
+<style>
+my {
+	display:block;
+	background-color:#dad;
+	padding:10px 30px 20px 30px;
+	font-size:30px;
+}
+</style>
+<body>	
+
+<h1>123456</h1>
+<h2>视频测试</h2>
+<my>asdf</my>
+<!--
+<video width="400" height="320" controls>
+	<source src="test.mp4" type="video/mp4">
+</video>
+-->
+<canvas id="myCanvas" width="200" height="150" style="border:1px solid #000123;"></canvas>
+<script>
+	
+	var sec=document.getElementById("myCanvas");
+	var qctx=sec.getContext("2d");
+	qctx.beginPath();
+	qctx.arc(50,50,40,0,20);
+	qctx.stroke();
+</script>
+</body>
+</html>
